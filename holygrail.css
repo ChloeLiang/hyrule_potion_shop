@@ -1,55 +1,58 @@
-body{
-  min-height:100vh;
+body {
+  min-height: 100vh;
 }
-main{
-  /* display: */
+main {
+  display: flex;
 }
-.content{
-  /* flex-grow: */
+.content {
+  flex-grow: 1;
 }
-aside{
-  /* order: */
-}
-
-main>*{
-  background-color:#eee;
-  margin:10px;
-}
-main>*:not(:nth-child(1)){
-  margin-left:0px;
-}
-header, footer{
-  background-color:#ccc;
+aside {
+  order: 2;
 }
 
-nav, aside{
-  min-width:160px;
-  max-width:160px;
+main > * {
+  background-color: #eee;
+  margin: 10px;
+}
+main > *:not(:nth-child(1)) {
+  margin-left: 0px;
+}
+header,
+footer {
+  background-color: #ccc;
 }
 
-@media screen and (max-width: 620px){
-  main{
-    /* flex-direction: */
+nav,
+aside {
+  min-width: 160px;
+  max-width: 160px;
+}
+
+@media screen and (max-width: 620px) {
+  main {
+    flex-direction: column;
   }
-  main>*:not(:nth-child(1)){
-    margin-left:10px;
-    margin-top:0px;
+  main > *:not(:nth-child(1)) {
+    margin-left: 10px;
+    margin-top: 0px;
   }
-  nav{
-    /* order: */
+  nav {
+    order: 1;
   }
-  aside{
-    /* order: */
+  aside {
+    order: 2;
   }
-  nav ul{
-    text-align:center;
+  nav ul {
+    text-align: center;
   }
-  nav figure img{
-    width:100px;
-    float:left;
+  nav figure img {
+    width: 100px;
+    float: left;
   }
-  nav, aside{
-    min-width:none;
-    max-width:none;
+  nav,
+  aside {
+    min-width: none;
+    max-width: none;
   }
 }
